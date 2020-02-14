@@ -1,0 +1,14 @@
+numpy==1.12.1
+Flask_Sijax==0.4.1
+WTForms==2.1
+Flask_Mail==0.9.1
+Flask_Login==0.4.1
+Flask_SQLAlchemy==2.3.2
+Flask==0.12.2
+Flask_WTF==0.14.2
+beautifulsoup4==4.6.0
+itsdangerous==0.24
+
+gunicorn
+psycopg2
+boto3

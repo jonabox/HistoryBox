@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+	<div style = "text-align: center; margin-top: 17%;">
+    <form method="POST" action="/login">
+        {{ form.hidden_tag() }}
+         <label>Email</label> 
+         {{ form.email(size=20) }}
+        <label>Password</label> {{ form.password(size=20) }}
+        <input class="btn btn-primary mb-2" type="submit" value="Login">
+    </form>
+
+    <div style = "margin-top: 15px;"> No account? <a href="/signup"> Sign up here!</a> </div>
+	</div>
+
+{% endblock content %}

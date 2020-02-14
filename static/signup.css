@@ -1,0 +1,31 @@
+html{
+	height: 100%;
+}
+
+body{
+	height:100%;
+	background-color: white;
+}
+
+#sign-up{
+	width: 40%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 9%;
+}
+
+#log-in-prompt{
+	text-align: center;
+}
+
+#log-in-box{
+	margin-right: 25%;
+	margin-left: 25%;
+	position: fixed;
+	top: 44.85%;
+	width: 50%;
+	height: 10.3%;
+	display: none;
+}
+
+/*Reference for animation: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations*/

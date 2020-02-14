@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+
+		<div style = "text-align: center; height: 50%; width: 100%;">
+			Score: <span id="randomLikes" > {{ randomPictureLikes }} </span>
+			<br>
+			<span id="randomImg"> <img id = "randomImg" src = {{ randomPictureUrl }}> </span>
+			<br>
+		</div>
+
+
+		<div id = "description" class = "card" style = "margin-top: 40px">
+				<span id="randomTxt" style = "margin: 5px"> {{ randomPictureText }} </span>
+		</div>
+
+		<div id = "buttons">
+		<button
+				onclick="Sijax.request('new_photo');"
+				id = "new-pic-button" class="btn btn-info"> New Photo! </button>
+			{% if current_user.is_authenticated %}
+			  	<button
+						onclick="Sijax.request('like_photo');"
+						id = "like-pic-button" class = "btn btn-success"> Like
+				</button>
+
+				<button
+						onclick="Sijax.request('unlike_photo');"
+						id = "unlike-pic-button" class = "btn btn-danger"> Unlike
+				</button>
+			{% endif %}
+
+		<button
+				onclick="Sijax.request('share_photo');"
+				id = "share-pic-button" class = "btn btn-dark"> Share
+		</button>
+
+		</div>
+
+{% endblock %}
+

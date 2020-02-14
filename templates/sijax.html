@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript"
+    src="/static/js/sijax/sijax.js"></script>
+<script type="text/javascript">
+    {{ g.sijax.get_js()|safe }}
+</script>
+</head>
+
+
+<body>
+    <span id="element"> hello! </span>
+    <hr>
+    <a href="javascript://" onclick="Sijax.request('say_hi');">Click here</a>
+</body>
+</html>
+

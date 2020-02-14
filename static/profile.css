@@ -1,0 +1,38 @@
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	background-image: url("../static/images/bgtest.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#user-info{
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 56px;
+	width: 23%;
+}
+
+#profile-picture{
+	position: absolute;
+	top: 2%;
+	left: 2.5%;
+	width: 95%;
+	height: 25%;
+}
+
+#user-data{
+	position: absolute;
+	top: 29%;
+	left: 2.5%;
+	width: 95%;
+}
+
+#liked-photos{
+	margin-left: 25%;
+	margin-bottom: 15px;
